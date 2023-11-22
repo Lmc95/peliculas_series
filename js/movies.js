@@ -356,5 +356,4 @@ let series = [
     }
 ];
 
-export { peliculas, series};
 

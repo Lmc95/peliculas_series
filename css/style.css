@@ -3,6 +3,78 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    color: rgb(15, 15, 15);
 }
+/* ETIQUETAS GLOBALES */
+p,
+a,
+li {
+    list-style: none;
+    text-decoration: none;
+    color: rgb(15, 15, 15);
+}
+/* HEADER */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+.cont_header {
+    background-color: rgb(10, 10, 10);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-bottom: 1px solid rgba(250, 250, 250, 0.25);
+    color: rgb(205, 205, 205);
+}
+/* MENU MOBILE */
+.menu_mobile {
+    background-color: rgb(20, 20, 20);
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    margin-left: -105%;
+    visibility: hidden;
+    transition: all .5s ease-in-out;
+}
+.menu_mobile ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.menu_mobile a {
+    border: 1px solid white;
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+    padding: 10px 15px;
+    color: rgb(205, 205, 205);
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+/* ANIMACION MENU */
+.abrir_menu {
+    visibility: visible;
+    margin: 0;
+}
+/********************/
+
+
 
 
