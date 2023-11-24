@@ -1,0 +1,124 @@
+/* PORTADA */
+.portada {
+    background-image: url('/assets/peliculas/bg/portada_jw.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    min-height: calc(100vh - 80px);
+}
+.opacity_bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+.carta_portada {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: rgb(225, 225, 225);
+    padding: 10px 20px;
+    margin-top: 150px;
+    text-shadow: 0 0 2px black;
+}
+.carta_portada h1 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.carta_portada p {
+    color: rgb(225, 225, 225);
+    font-size: 1.25em;
+    margin-bottom: 20px;
+}
+.carta_portada button {
+    width: 150px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+}
+/***************************/
+
+/* PELICULAS */
+/* grid peliculas */
+.cont_peliculas {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 10px;
+    margin-top: 100px;
+}
+.menu_h1_peliculas {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 15px 0;
+}
+.h1_peliculas {
+    font-size: 2em;
+    margin: 5px 30px 5px 0;
+    padding: 0;
+    font-weight: bold;
+}
+.cat_peliculas {
+    margin: 5px 0;
+}
+.cat_peliculas a {
+    margin: 0 10px 0 0;
+    padding: 0;
+    font-size: 1.15em;
+    font-weight: 500;
+}
+
+.carrusel_peliculas { 
+    /* CARRUSEL */
+    width: 100%;
+    min-width: 200px;
+    max-width: 1200px;
+    display: flex;
+    border-radius: 10px;
+    overflow-x: scroll;
+    position: relative;
+}
+.carta_pelicula {
+    margin-right: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.img_pelicula {
+    width: 250px;
+}
+.img_pelicula img {
+    width: 100%;
+}
+
+
+.ver_peliculas {
+    background-color: rgba(0, 0, 0, 0.5);
+    min-width: 200px;
+    max-width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.btn_izq,
+.btn_der {
+    border: none;
+    min-width: 50px;
+}
+.btn_izq {
+    position: sticky;
+    left: 0;
+}
+.btn_der {
+    position: sticky;
+    right: 0;
+}
