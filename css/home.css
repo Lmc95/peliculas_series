@@ -1,6 +1,6 @@
 /* PORTADA */
 .portada {
-    background-image: url('/assets/peliculas/bg/portada_jw.jpg');
+    background-image: url('/assets/peliculas/bg/bg_jw1.png');
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -9,14 +9,7 @@
     position: relative;
     width: 100%;
     min-height: calc(100vh - 80px);
-}
-.opacity_bg {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.35);
+    border-bottom: 1px solid rgb(205, 205, 205);
 }
 .carta_portada {
     position: relative;
@@ -46,38 +39,47 @@
 
 /* PELICULAS */
 /* grid peliculas */
-.cont_peliculas {
+.cont_peliculas,
+.cont_series {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
     padding: 0 10px;
-    margin-top: 100px;
+    margin-top: 50px;
+
 }
-.menu_h1_peliculas {
+.menu_h1_peliculas,
+.menu_h1_series {
     width: 100%;
+    max-width: 1200px;
     height: auto;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     margin: 15px 0;
 }
-.h1_peliculas {
+.h1_peliculas,
+.h1_series {
     font-size: 2em;
     margin: 5px 30px 5px 0;
     padding: 0;
     font-weight: bold;
 }
-.cat_peliculas {
+.cat_peliculas,
+.car_series {
     margin: 5px 0;
 }
-.cat_peliculas a {
+.cat_peliculas a,
+.cat_series a {
     margin: 0 10px 0 0;
     padding: 0;
     font-size: 1.15em;
     font-weight: 500;
 }
 
-.carrusel_peliculas { 
+.carrusel_peliculas,
+.carrusel_series { 
     /* CARRUSEL */
     width: 100%;
     min-width: 200px;
@@ -87,19 +89,30 @@
     overflow-x: scroll;
     position: relative;
 }
-.carta_pelicula {
+.carta_pelicula,
+.carta_serie {
     margin-right: 10px;
     background-color: rgba(0, 0, 0, 0.5);
 }
-.img_pelicula {
-    width: 250px;
+.img_pelicula,
+.img_serie {
+    width: 100%;
+    min-width: 200px;
+    max-width: 250px;
 }
-.img_pelicula img {
+.img_pelicula img,
+.img_serie img {
     width: 100%;
 }
+.titulo_pelicula h2,
+.titulo_serie h2 {
+    font-size: 1.2em;
+    padding: 10px;
+}
 
 
-.ver_peliculas {
+.ver_peliculas,
+.ver_series {
     background-color: rgba(0, 0, 0, 0.5);
     min-width: 200px;
     max-width: 250px;
@@ -109,16 +122,3 @@
 }
 
 
-.btn_izq,
-.btn_der {
-    border: none;
-    min-width: 50px;
-}
-.btn_izq {
-    position: sticky;
-    left: 0;
-}
-.btn_der {
-    position: sticky;
-    right: 0;
-}
