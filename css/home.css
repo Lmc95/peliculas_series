@@ -1,23 +1,31 @@
 /* PORTADA */
 .portada {
-    background-image: url('/assets/peliculas/bg/bg_jw1.png');
-    background-position: top;
+    background-image: url('/assets/peliculas/bg_peliculas/bg_jw1.png');
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    justify-content: center;
     position: relative;
     width: 100%;
     min-height: calc(100vh - 80px);
     border-bottom: 1px solid rgb(205, 205, 205);
 }
+.opacity_bg {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 .carta_portada {
     position: relative;
     width: 100%;
+    max-width: 700px;
     height: 100%;
     color: rgb(225, 225, 225);
     padding: 10px 20px;
-    margin-top: 150px;
+    margin-top: 125px;
     text-shadow: 0 0 2px black;
 }
 .carta_portada h1 {
@@ -29,96 +37,115 @@
     font-size: 1.25em;
     margin-bottom: 20px;
 }
-.carta_portada button {
+.botones_portada button {
     width: 150px;
     height: 45px;
+    margin: 0 15px 0 0;
     border: none;
     border-radius: 10px;
 }
 /***************************/
 
 /* PELICULAS */
-/* grid peliculas */
-.cont_peliculas,
-.cont_series {
+.contenedor_peliculas {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    padding: 0 10px;
-    margin-top: 50px;
-
+    padding: 50px 10px 10px;
 }
-.menu_h1_peliculas,
-.menu_h1_series {
+.contenedor_peliculas h1,
+.contenedor_peliculas h2,
+.contenedor_peliculas p {
+    color: rgb(205, 205, 205);
+}
+/* titulo seccion peliculas */
+.seccion_peliculas {
     width: 100%;
     max-width: 1200px;
-    height: auto;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    margin: 15px 0;
-}
-.h1_peliculas,
-.h1_series {
-    font-size: 2em;
-    margin: 5px 30px 5px 0;
-    padding: 0;
-    font-weight: bold;
-}
-.cat_peliculas,
-.car_series {
+    flex-wrap: wrap;
     margin: 5px 0;
 }
-.cat_peliculas a,
-.cat_series a {
-    margin: 0 10px 0 0;
-    padding: 0;
-    font-size: 1.15em;
-    font-weight: 500;
+.seccion_peliculas h1 {
+    color: rgb(205, 205, 205);
+    margin: 0 20px 0 10px;
+    padding: 5px 0;
 }
-
-.carrusel_peliculas,
-.carrusel_series { 
-    /* CARRUSEL */
-    width: 100%;
-    min-width: 200px;
-    max-width: 1200px;
-    display: flex;
-    border-radius: 10px;
-    overflow-x: scroll;
-    position: relative;
+.seccion_peliculas nav {
+    margin: 0 0 0 10px;
+    padding: 5px 0 0;
 }
-.carta_pelicula,
-.carta_serie {
+.seccion_peliculas a {
     margin-right: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
 }
-.img_pelicula,
-.img_serie {
+/* Carrusel */
+.peliculas {
     width: 100%;
-    min-width: 200px;
-    max-width: 250px;
+    max-width: 1200px;
+    overflow-x: hidden;
+    position: relative;
+    margin-top: 5px;
 }
-.img_pelicula img,
-.img_serie img {
-    width: 100%;
-}
-.titulo_pelicula h2,
-.titulo_serie h2 {
-    font-size: 1.2em;
-    padding: 10px;
-}
-
-
-.ver_peliculas,
-.ver_series {
-    background-color: rgba(0, 0, 0, 0.5);
-    min-width: 200px;
-    max-width: 250px;
+.carrusel {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.carta {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    min-width: calc(50% - 20px);
+    margin: 10px;
+}
+.img_carta {
+    width: 100%;
+    margin: 0;
+    border: 1px solid rgba(250, 250, 250, 0.5);
+    border-bottom: none;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.img_carta img {
+    width: 100%;
+}
+.titulo {
+    border: 1px solid rgba(250, 250, 250, 0.5);
+    width: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.titulo h2 {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    font-size: 1.25em;
 }
 
+/* botones carrusel */
+.btn_izq,
+.btn_der {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.btn_izq i,
+.btn_der i {
+    font-size: 2em;
+}
+.btn_izq {
+    left: 10px;
+}
+.btn_der {
+    right: 10px;
+}
 

@@ -1,3 +1,5 @@
+import { peliculas, series } from "./movies.js";
+
 const menuMobile = document.querySelector('.menu_mobile')
 const btnMenu = document.querySelector('.menu_btn');
 
@@ -18,3 +20,14 @@ const animacionMenu = () => {
         menuMobile.classList.add('abrir_menu')
     }
 }
+
+const carrusel = document.querySelector('.carrusel');
+const btnIzq = document.querySelector('.btn_izq');
+const btnDer = document.querySelector('.btn_der');
+
+btnIzq.addEventListener('click', () => {
+    carrusel.scrollLeft -= carrusel.clientWidth * 1;
+})
+btnDer.addEventListener('click', () => {
+    carrusel.scrollLeft += carrusel.clientWidth * 1;
+})

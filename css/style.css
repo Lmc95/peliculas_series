@@ -11,7 +11,7 @@ a,
 li {
     list-style: none;
     text-decoration: none;
-    color: rgb(15, 15, 15);
+    color: rgb(205, 205, 205);
 }
 /* HEADER */
 header {
@@ -31,6 +31,7 @@ main {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    background-color: rgb(10, 10, 10);
 }
 .cont_header {
     background-color: rgb(10, 10, 10);
@@ -89,6 +90,7 @@ footer {
     justify-content: center;
     align-items: center;
     margin-top: 100px;
+    border-top: 1px solid black;
 }
 
 
