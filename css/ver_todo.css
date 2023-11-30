@@ -3,42 +3,66 @@ body {
     flex-direction: column;
     align-items: center;
 }
+.contenedor_menu_h1 {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 50px;
+}
+.h1_ver_todo {
+    width: auto;
+    padding: 0 20px 5px;
+    position: relative;
+}
+.nav_ver_todo {
+    width: 250px;
+    display: flex;
+    padding:  0 0 0 20px;
+    position: relative;
+}
+.nav_ver_todo button {
+    font-size: 1em;
+    font-weight: 500;
+    margin: 0 20px 5px 0;
+    padding: 5px 2px;
+    border: none;
+    background: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+#menu_genero {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 150px;
+    position: absolute;
+    padding: 10px;
+}
+
+#menu_ordenar {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 150px;
+    position: absolute;
+    left: 95px;
+    padding: 10px;
+}
+#menu_genero li,
+#menu_ordenar li {
+    margin-bottom: 5px;
+}
+.menu {
+    display: none;
+}
+.menu_mostrar {
+    display: block;
+}
+
 /* GRID */
 .ver_todo_peliculas {
-    border: 1px solid red;
     width: 100%;
     padding: 10px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-.h1_ver_todo {
-    border: 1px solid green;
-    width: 100%;
-    padding: 0 20px;
-    position: relative;
-}
-.nav_ver_todo {
-    border: 1px solid blueviolet;
-    width: 100%;
-    margin-left: 40px;
-    position: relative;
-}
-.menu_genero {
-    border: 1px solid red;
-    background-color: rgb(20, 20, 20);
-    width: 50%;
-    padding: 10px;
-    position: absolute;
-}
-.menu_genero li {
-    margin-bottom: 10px;
-    cursor: pointer;
-}
-.menu_estreno,
-.menu_ordenar {
-    display: none;
-}
-
 /* CARTA PELICULAS */
 .carta {
     display: flex;
