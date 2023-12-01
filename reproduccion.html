@@ -29,25 +29,38 @@
         </div>
     </header>
 
-    <section class="cont_portada">
-        <div class="bg_opacidad"></div>
-        <div class="descripcion">
-            <h2 class="titulo">Titulo</h2>
-            <p class="caracteristicas">8/10 | 2h 30m | 2023 | Acción, Suspenso, Drama</p>
-            <div class="info">
-                <p class="sipnosis">
-                    <b>Sipnosis:</b>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere voluptatem nulla assumenda veniam consectetur iusto ipsum repellat reprehenderit aperiam eum! Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                </p>
-                <p class="actores">
-                    <b>Actores:</b>
-                    Keanu Reeves, Michael Nyqvist, Ian McShane, John Leguizamo, Willem Dafoe, Alfie Allen, Dean Winters, Adrianne Palicki, Lance Reddick, Bridget Moynahan, David Patrick Kelly, Randall Duk Kim, Munro M. Bonnell, Omer Barnea, Toby Leonard Moore
-                </p>
+
+    <section class="contenedor_padre">
+        <div class="cont_imagen_titulo">
+            <figure class="imagen">
+                <img src="/assets/peliculas/img/sed-de-sangre-vikinga.avif" alt="">
+            </figure>
+            <div class="titulo">
+                <h1>TITULO</h1>
+                <p>8/10 | 2h 20m | 2023</p>
+                <p>Drama, Suspenso, Acción</p>
+                <button>Ver Trailer</button>
             </div>
         </div>
+        <div class="cont_info">
+            <p><b>Sipnosis: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolores architecto nisi laborum! Natus sapiente rerum iste commodi id ex.</p>
+            <p><b>Actores: </b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, rem!</p>
+        </div>
     </section>
-
     
+    <section class="contenedor_reproducir">
+        <div class="menu_reproductor">
+            <div class="idioma">
+                <button class="btn_idioma">Latino</button>
+                <button class="btn_idioma">Castellano</button>
+                <button class="btn_idioma">Ingles (sub)</button>
+            </div>
+            <button class="btn_descargar">Descargar</button>
+        </div>
+        <div class="reproductor">
+            <video src="/assets/peliculas/video/sed-sangre-vikinga.mp4" controls></video>
+        </div>
+    </section>
 
     <script type="module" src="/js/reproduccion.js"></script>
 </body>
