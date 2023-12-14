@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/home.css">
 </head>
 <body>
     <header>
@@ -19,7 +18,6 @@
                 <ul>
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#">Peliculas</a></li>
-                    <li><a href="#">Series</a></li>
                     <li><a href="#">Ayuda</a></li>
                 </ul>
             </nav>
@@ -29,127 +27,37 @@
     </header>
 
     <main>
-        <!-- PORTADA -->
-        <section class="portada">
-            <div class="opacity_bg"></div>
-            <article class="carta_portada">
-                <h1>JOHN WICK</h1>
-                <p class="info_pelicula">
-                    <i class="fa-solid fa-star" style="color: #ffffff;"></i> 8/10 | 2014 | <i class="fa-regular fa-clock" style="color: #ffffff;"></i> 2h 30m | Acción - Ciencia Ficción
-                </p>
-                <p class="descripcion_pelicula">
-                    La ciudad de Nueva York se convierte en el patio acribillado a balazos de un ex-asesino mientras él elimina a los gánsteres que destruyeron todo lo que él quería.
-                </p>
-                <div class="botones_portada">
-                    <button type="button">Ver Película</button>
-                    <button type="button">Trailer</button>
+       <section class="peliculas">
+            <!-- TODAS LAS PELICULAS -->
+            <article class="categoriaPelicula todas">
+                <h1>TODAS</h1>
+                <div class="contenedor">
                 </div>
             </article>
-        </section>
-
-        <!-- PELICULAS -->
-        <section class="contenedor_peliculas">
-
-            <div class="seccion_peliculas">
-                <h1>PELICULAS</h1>
-                <nav>
-                    <a href="#">Nuevas</a>
-                    <a href="#">Populares</a>
-                    <a href="#">Ver todo</a>
-                </nav>
-            </div>
-
-            <div class="peliculas">
-                <button class="btn_izq">
-                    <i class="fa-solid fa-chevron-left" style="color: #ffffff;"></i>
-                </button>
-                <div class="carrusel">
-                    <div class="carta">
-                        <figure class="img_carta">
-                            <img src="/assets/peliculas/img/john_wick.avif" alt="">
-                        </figure>
-                        <figcaption class="titulo">
-                            <h2>Titulo</h2>
-                        </figcaption>
-                    </div>
-                    <div class="carta">
-                        <figure class="img_carta">
-                            <img src="/assets/peliculas/img/john_wick.avif" alt="">
-                        </figure>
-                        <figcaption class="titulo">
-                            <h2>Titulo</h2>
-                        </figcaption>
-                    </div>
-                    <div class="carta">
-                        <figure class="img_carta">
-                            <img src="/assets/peliculas/img/john_wick.avif" alt="">
-                        </figure>
-                        <figcaption>
-                            <h2>Titulo</h2>
-                        </figcaption>
-                    </div>
-                    <div class="carta">
-                        <figure class="img_carta">
-                            <img src="/assets/peliculas/img/john_wick.avif" alt="">
-                        </figure>
-                        <figcaption>
-                            <h2>Titulo</h2>
-                        </figcaption>
-                    </div>
-                    <div class="carta">
-                        <figure class="img_carta">
-                            <img src="/assets/peliculas/img/john_wick.avif" alt="">
-                        </figure>
-                        <figcaption>
-                            <h2>Titulo</h2>
-                        </figcaption>
-                    </div>
-                    <div class="carta">
-                        <figure class="img_carta">
-                            <img src="/assets/peliculas/img/john_wick.avif" alt="">
-                        </figure>
-                        <figcaption>
-                            <h2>Titulo</h2>
-                        </figcaption>
-                    </div>
-                    <div class="carta">
-                        <figure class="img_carta">
-                            <img src="/assets/peliculas/img/john_wick.avif" alt="">
-                        </figure>
-                        <figcaption>
-                            <h2>Titulo</h2>
-                        </figcaption>
-                    </div>
-                    <div class="carta">
-                        <figure class="img_carta">
-                            <img src="/assets/peliculas/img/john_wick.avif" alt="">
-                        </figure>
-                        <figcaption>
-                            <h2>Titulo</h2>
-                        </figcaption>
-                    </div>
-                    <div class="carta">
-                        <figure class="img_carta">
-                            <img src="/assets/peliculas/img/john_wick.avif" alt="">
-                        </figure>
-                        <figcaption>
-                            <h2>Titulo</h2>
-                        </figcaption>
-                    </div>
+            <!-- POPULARES -->
+            <article class="categoriaPelicula populares">
+                <h1>POPULARES</h1>
+                <div class="contenedor">
                 </div>
-                <button class="btn_der">
-                    <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
-                </button>
-            </div>
-        </section>
+            </article>
+            <!-- TOP -->
+            <article class="categoriaPelicula top">
+                <h1>TOP</h1>
+                <div class="contenedor">
+                </div>
+            </article>
+            <!-- PROXIMAMENTE -->
+            <article class="categoriaPelicula proximas"> 
+                <h1>PROXIMAS</h1>
+                <div class="contenedor">
+                </div>
+            </article>
+
+       </section>
     </main>
 
-    <footer>
-        © 2023 - Lucas M. Carranza
-    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script type="module" src="/js/movies.js"></script>
     <script type="module" src="/js/app.js"></script>
 </body>
 </html>
