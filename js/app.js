@@ -94,4 +94,28 @@ categoriasContenedor.forEach(contenedor => {
     }
 });
 
+// CARRUSEL
+// Función para manejar el clic de los botones
+function manejoDeClick(contenedor, direccion) {
+    // Realizar desplazamiento hacia la izquierda o derecha según la dirección
+    if (direccion === 'izquierda') {
+        contenedor.scrollLeft -= contenedor.clientWidth;
+    } else if (direccion === 'derecha') {
+        contenedor.scrollLeft += contenedor.clientWidth;
+    }
+}
 
+// Asociar eventos de clic a la función manejoDeClick para los botones izquierdo y derecho
+document.querySelectorAll('.categoriaPelicula').forEach(categoria => {
+    const contenedor = categoria.querySelector('.contenedor');
+    const btnIzq = categoria.querySelector('.btn_izq');
+    const btnDer = categoria.querySelector('.btn_der');
+
+    btnIzq.addEventListener('click', () => {
+        manejoDeClick(contenedor, 'izquierda');
+    });
+
+    btnDer.addEventListener('click', () => {
+        manejoDeClick(contenedor, 'derecha');
+    });
+});
