@@ -66,11 +66,15 @@ const crearCarta = (p, contenedor) => {
     portada.classList.add('portada');
     portada.src = imagen + p.poster_path;
     carta.appendChild(portada);
-    // titulo
-    let titulo = document.createElement('h2');
-    titulo.classList.add('titulo');
-    titulo.innerHTML = p.title;
-    carta.appendChild(titulo);
+    // contenido
+    let contCarta = document.createElement('div');
+    contCarta.classList.add('cont_carta')
+    contCarta.innerHTML = `
+        <div class="opacidad_bg"></div>
+        <h1 class="titulo">${p.title}</h1>
+        <button id="btn_play">PLAY</button>
+        `
+    carta.appendChild(contCarta);
 }
 
 categoriasContenedor.forEach(contenedor => {
