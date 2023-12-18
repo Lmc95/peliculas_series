@@ -123,3 +123,6 @@ document.querySelectorAll('.categoriaPelicula').forEach(categoria => {
         manejoDeClick(contenedor, 'derecha');
     });
 });
+
+
+
