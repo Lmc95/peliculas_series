@@ -1,3 +1,4 @@
+
 // MENU MOBILE - var
 const menuMobile = document.querySelector('.menu_mobile')
 const btnMenu = document.querySelector('.menu_btn');
@@ -124,5 +125,13 @@ document.querySelectorAll('.categoriaPelicula').forEach(categoria => {
     });
 });
 
-
-
+export {
+    apiUrl,
+    apiKey,
+    lenguajeEs,
+    imagen,
+    allMovies,
+    popular,
+    topRated,
+    upcoming,
+};

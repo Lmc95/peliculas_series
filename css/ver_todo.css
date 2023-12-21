@@ -1,0 +1,31 @@
+.contenedor_categoria {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor_peliculas {
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 15px;
+    gap: 2px;
+    padding: 0 10px;
+    position: relative;
+}
+
+
+/* MEDIA QUERIES - GRID Responsive */
+@media screen and (min-width: 500px) {
+    .contenedor_peliculas {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (min-width: 750px) {
+    .contenedor_peliculas {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
